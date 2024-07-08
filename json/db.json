@@ -28,40 +28,40 @@
   },
   "employesss": [
     {
+      "id": "205a",
       "fistname": "George",
       "lastname": "Jacob",
       "email": "jacobgeorge399@gmail.com",
-      "dob": "2024-06-30T18:30:00.000Z",
-      "gender": "male",
-      "education": "Graduation",
-      "company": "google",
-      "experience": "1",
-      "package": "7.8",
-      "id": "dbe3"
-    },
-    {
-      "fistname": "George",
-      "lastname": "Jacob",
-      "email": "jacobgeorge399@gmail.com",
-      "dob": "2024-07-07T18:30:00.000Z",
-      "gender": "male",
-      "education": "Graduation",
-      "company": "neww",
-      "experience": "3",
-      "package": "3",
-      "id": "d9fd"
-    },
-    {
-      "id": "1641",
-      "fistname": "George",
-      "lastname": "Jacob",
-      "email": "jacobgeorge399@gmail.com",
-      "dob": "2024-07-07T18:30:00.000Z",
+      "dob": "2024-07-08T18:30:00.000Z",
       "gender": "male",
       "education": "post graduation",
-      "company": "fbvdfvdf",
+      "company": "new",
       "experience": "1",
-      "package": "1"
+      "package": "12"
+    },
+    {
+      "id": "d7f2",
+      "fistname": "George",
+      "lastname": "Jacob",
+      "email": "jacobgeorge399@gmail.com",
+      "dob": "2024-08-12T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "start",
+      "experience": "2",
+      "package": "2"
+    },
+    {
+      "id": "37c7",
+      "fistname": "George",
+      "lastname": "Jacob",
+      "email": "jacobgeorge399@gmail.com",
+      "dob": "2024-07-01T18:30:00.000Z",
+      "gender": "male",
+      "education": "Graduation",
+      "company": "old",
+      "experience": "22",
+      "package": "24"
     }
   ]
 }

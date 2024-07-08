@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CoreService } from './core/core.service';
+import { DeletConformationComponent } from './delet-conformation/delet-conformation.component';
 
 
 @Component({
@@ -67,17 +68,26 @@ export class AppComponent implements OnInit{
   }
 
   deleteEmployeList(id: any){
+    const dialogRef = this._dialog.open(DeletConformationComponent, {data: id, disableClose: false });
     
-    this._empService.deleteEmploye(id).subscribe({
-      next: (res) => {
-      
-        this._coreservice.openSnackBar('Employe deleted','Done')
-        this.getEmployeList();
-      },
-      error(err){
-        console.log(err)
+    dialogRef.afterClosed().subscribe({
+      next: (val) => {
+        if(val){
+          // console.log("ok")
+          this.getEmployeList();
+        }
       }
     })
+    // this._empService.deleteEmploye(id).subscribe({
+    //   next: (res) => {
+      
+    //     this._coreservice.openSnackBar('Employe deleted','Done')
+    //     this.getEmployeList();
+    //   },
+    //   error(err){
+    //     console.log(err)
+    //   }
+    // })
   }
 
 
@@ -92,7 +102,7 @@ export class AppComponent implements OnInit{
 
 
   openeditform(data: any) {
-   const dialogRef = this._dialog.open(EmpAddEditComponent,{data,});
+   const dialogRef = this._dialog.open(EmpAddEditComponent,{data});
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if(val){
